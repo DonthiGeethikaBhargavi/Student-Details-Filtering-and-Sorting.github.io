@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata for the page -->
+  <meta charset="UTF-8">  <!-- Character encoding for the page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Make the page responsive on different devices -->
+  <title>Student Details Filtering and Sorting</title>  <!-- Title of the page -->
+  <link rel="stylesheet" href="styles.css">  <!-- Link to the external CSS file for styling -->
+  <link rel="icon" href="logo.jpg">  <!-- icon for the page -->
+</head>
+<body>
+  <!-- Main container for the page content -->
+  <div class="container">
+    <h1>Student Details Filtering and Sorting</h1>  <!-- Page header -->
+    <br><br>
+
+    <!-- Section for filtering options -->
+    <div class="filter-section">
+      <!-- Dropdown for selecting subject -->
+      <select id="subject" class="form-control">
+        <option value="">--Select Subject--</option>
+        <option value="english">English</option>
+        <option value="maths">Maths</option>
+        <option value="science">Science</option>
+        <option value="social">Social Science</option>
+      </select>
+
+      <!-- Radio buttons for selecting filter type (Above, Below, Between) -->
+      <div>
+        <label><input type="radio" name="filterType" value="above"> Above</label>
+        <label><input type="radio" name="filterType" value="below"> Below</label>
+        <label><input type="radio" name="filterType" value="between"> Between</label>
+      </div>
+
+      <!-- Input fields for entering filter values -->
+      <div class="filter-inputs">
+        <input type="number" id="value1" class="form-control" placeholder="Enter value 1">  <!-- First filter value -->
+        <input type="number" id="value2" class="form-control" placeholder="Enter value 2" style="display: none;">  <!-- Second filter value (hidden initially) -->
+      </div>
+
+      <!-- Buttons for applying or clearing the filter -->
+      <button id="filterBtn" class="btn">Filter</button>
+      <button id="clearBtn" class="btn">Clear</button>
+    </div>
+
+    <!-- Table for displaying student details -->
+    <table>
+      <thead>
+        <tr>
+          <th id="snoHeader" onclick="sortTable('sno')">S.No <span class="arrow"></span></th>  <!-- Sort by S.No -->
+          <th id="nameHeader" onclick="sortTable('name')">Name <span class="arrow"></span></th>  <!-- Sort by Name -->
+          <th id="englishHeader" onclick="sortTable('english')">English <span class="arrow"></span></th>  <!-- Sort by English score -->
+          <th id="mathsHeader" onclick="sortTable('maths')">Maths <span class="arrow"></span></th>  <!-- Sort by Maths score -->
+          <th id="scienceHeader" onclick="sortTable('science')">Science <span class="arrow"></span></th>  <!-- Sort by Science score -->
+          <th id="socialHeader" onclick="sortTable('social')">Social Science <span class="arrow"></span></th>  <!-- Sort by Social Science score -->
+        </tr>
+      </thead>
+      <tbody id="studentTable">
+        <!-- Rows will be dynamically populated here -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal for displaying error messages -->
+  <div id="errorModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Invalid Input</h5>  <!-- Title of the error modal -->
+      </div>
+      <div class="modal-body">
+        <!-- Message for the user when an invalid input is detected -->
+        Please see if you missed any of these subject or filter type(Above or Below or Between) or missed providing values for filtering.
+      </div>
+      <div class="modal-footer">
+        <button id="closeModalBtn" class="btn">Close</button>  <!-- Button to close the modal -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

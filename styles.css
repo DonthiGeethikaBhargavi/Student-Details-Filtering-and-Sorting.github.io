@@ -1,0 +1,231 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Container Styles */
+.container {                                                           
+  max-width: 90%;
+  margin: 70px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header Styles */
+h1 {
+  color: rgb(37, 99, 235);
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Orbitron, sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Underline Effect on Hover */
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(37, 99, 235);
+  transition: width 0.3s ease-in-out;
+}
+
+/* Hover Effect for Underline */
+h1:hover::after {
+  width: 100%;
+}
+
+/* Filter Section Styles */
+.filter-section {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+/* Styles for Individual Filter Elements */
+.filter-section > * {
+  flex: 1 1 calc(100% / 6 - 10px); /* Make filter items responsive, distributing equally */
+  min-width: 100px;
+  max-width: calc(100% / 6);
+}
+
+
+/* Button, Select, and Input Styles */
+.filter-section button,
+.filter-section select,
+.filter-inputs input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Button Specific Styles */
+.filter-section button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Button Hover Effect */
+.filter-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Table Header Styles */
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Table Cell Padding and Alignment */
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Table Header Styles (Additional) */
+th {
+  background-color: #007bff;
+  color: white;
+  position: relative;
+}
+
+/* Row Hover Effect */
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+/* Sorting Arrow Styles */
+.arrow {
+  margin-left: 5px;
+  cursor: pointer;
+  color: transparent; /* Initially, set the color to transparent */
+  transition: color 0.3s ease;
+}
+
+/* Up Arrow Icon */
+.arrow-up::after {
+  content: "↑";
+}
+
+/* Down Arrow Icon */
+.arrow-down::after {
+  content: "↓";
+}
+
+/* Active Arrow Styles */
+.arrow.active {
+  color: white;
+}
+
+/* Arrow Visibility on Header Hover */
+th:hover .arrow {
+  color: white; /* Arrow color will be white on hover */
+}
+
+th:hover .arrow-up::after,
+th:hover .arrow-down::after {
+  visibility: visible; /* Make arrow visible on hover */
+}
+
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Modal Header Styles */
+.modal-header h5 {
+  color: #ff5722;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Modal Body Styles */
+.modal-body {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Modal Footer Styles */
+.modal-footer {
+  text-align: center;
+}
+
+/* Button Styles for Modal */
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+    align-items: stretch;/* Make filter items take up full width */
+  }
+
+  .filter-section > * {
+    max-width: 100%;
+  }
+}
