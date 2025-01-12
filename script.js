@@ -1,6 +1,6 @@
 //  creating an Array of student 
 const students = [
-  { sno: 1, name: 'Janu', english: 50, maths: 86, science: 77, social: 89 },
+  { sno: 1, name: 'Bob', english: 50, maths: 86, science: 77, social: 89 },
   { sno: 2, name: 'Tanu', english: 75, maths: 96, science: 67, social: 91 },
   { sno: 3, name: 'Tara', english: 90, maths: 35, science: 86, social: 100 },
   { sno: 4, name: 'Glen', english: 79, maths: 68, science: 77, social: 68 },
