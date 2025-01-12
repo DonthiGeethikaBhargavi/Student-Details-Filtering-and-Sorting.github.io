@@ -31,7 +31,7 @@ The application uses the following sample data:
 
 | S.No | Name | English | Maths | Science | Social Science |
 |------|------|---------|-------|---------|----------------|
-| 1    | Janu | 50      | 86    | 77      | 89             |
+| 1    | Bob  | 50      | 86    | 77      | 89             |
 | 2    | Tanu | 75      | 96    | 67      | 91             |
 | 3    | Tara | 90      | 35    | 86      | 100            |
 | 4    | Glen | 79      | 68    | 77      | 68             |
@@ -46,7 +46,7 @@ The application uses the following sample data:
   - **Clear**: Reset the table.
 - **Sortable Table**: Columns (S.No, Name, English, Maths, Science, Social Science) are clickable for sorting.
 
-![image](https://github.com/user-attachments/assets/3835aab5-5b1d-4976-aa1f-9a7d975dc68e)
+![image](https://github.com/user-attachments/assets/e5208326-dc05-4cc4-8949-8ee78ee4dcde)
 
 ## Implementation
 
@@ -69,13 +69,13 @@ The project is implemented using the following technologies:
 ## Example Scenarios
 
 1. **Maths - Above 80**: Displays students with Maths scores greater than 80.
-   ![image](https://github.com/user-attachments/assets/ae7d6cc0-6461-418f-80c2-230f3472187d)
+  ![image](https://github.com/user-attachments/assets/61cc7fb1-6285-4d43-9f58-36e00f5a2f36)
 
 2. **Science - Between 70 and 90**: Displays students with Science scores in the range 70–90.
-   ![image](https://github.com/user-attachments/assets/77f6d7ab-bdf6-4202-8ba9-d1f864a2d42d)
+  ![image](https://github.com/user-attachments/assets/a30e6d19-78ad-4719-86c2-bf2a3d35197f)
 
 3. **English - Below 80**: Displays students with English scores lesser than 80.
-   ![image](https://github.com/user-attachments/assets/509631b1-523d-4880-8d09-b2008412dafe)
+  ![image](https://github.com/user-attachments/assets/c758f91f-d553-41fe-bfa1-9f468789f737)
 
 ## Error Handling Example
 
@@ -89,7 +89,8 @@ If the user does not enter any subject or filter type (Above, Below, or Between)
 
 ### Error Message Displayed:
 If any required input is missing (subject, filter type, or filter values), the popup will display the following message:
-![image](https://github.com/user-attachments/assets/c7336d23-3232-421a-ad30-edd6fa2d74b3)
+![image](https://github.com/user-attachments/assets/4879917f-84cc-45e1-bb37-71d09e7c531f)
+
 
 
 
