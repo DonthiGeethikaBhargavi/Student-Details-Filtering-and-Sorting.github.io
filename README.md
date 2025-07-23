@@ -2,6 +2,14 @@
 Interactive web app for filtering and sorting student details by subject scores. Features dynamic filtering, sortable tables, and real-time updates using JavaScript, HTML, and CSS.
 
 
+### 🚀 Live Demo
+
+Experience the Student Details Filtering and Sorting app in action:
+
+[![🔗 Click Here to Try It Live](https://img.shields.io/badge/Live%20Demo-Click%20to%20Launch-blueviolet?style=for-the-badge&logo=google-chrome&logoColor=white)](https://donthigeethikabhargavi.github.io/Student-Details-Filtering-and-Sorting.github.io/)
+
+
+
 ## Features
 
 1. **Dropdown for Subject Selection**
@@ -92,10 +100,37 @@ If any required input is missing (subject, filter type, or filter values), the p
 ![image](https://github.com/user-attachments/assets/4879917f-84cc-45e1-bb37-71d09e7c531f)
 
 
+## 🚀 How to Run the Project
+
+### 💻 Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/DonthiGeethikaBhargavi/Student-Details-Filtering-and-Sorting.github.io.git
+   cd Student-Details-Filtering-and-Sorting.github.io
+   ```
+
+2. Run this command in terminal (for most systems):
+   ```bash
+   start index.html      # Windows
+   open index.html       # macOS
+   xdg-open index.html   # Linux
+   ```
+
+---
+
+### 👩‍💻 Author
+
+**Donthi Geethika Bhargavi**  
+
+---
+
+### 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
 
 
 
-   
 
 
 
