@@ -107,7 +107,7 @@ If any required input is missing (subject, filter type, or filter values), the p
 1. Clone the repository:
    ```bash
    git clone https://github.com/DonthiGeethikaBhargavi/Student-Details-Filtering-and-Sorting.github.io.git
-   cd Student-Details-Filtering-and-Sorting.github.io
+   cd Student-Details-Filtering-and-Sorting
    ```
 
 2. Run this command in terminal (for most systems):
